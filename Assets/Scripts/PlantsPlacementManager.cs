@@ -87,9 +87,16 @@ public class PlantsPlacementManager : MonoBehaviour
         return false;
     }
 
+    public bool IsButtonPressed()
+    {
+        if (EventSystem.current.currentSelectedGameObject?.GetComponent<Button>() == null)
+            return false;
+        else
+            return true;
+    }
     private bool TryPlaceNewPlant(Ray ray)
     {
-        if (aRRaycastManager.Raycast(ray, aRRaycastHits, UnityEngine.XR.ARSubsystems.TrackableType.Planes))
+        if (aRRaycastManager.Raycast(ray, aRRaycastHits, UnityEngine.XR.ARSubsystems.TrackableType.Planes) && IsButtonPressed() == false)
         {
             Pose hitPose = aRRaycastHits[0].pose;
             GameObject randomPlant = plants[activePlant];
@@ -102,7 +109,7 @@ public class PlantsPlacementManager : MonoBehaviour
     private void MoveSelectedPlant(Touch touch)
     {
         Ray ray = aRSessionOrigin.Camera.ScreenPointToRay(touch.position);
-        if (aRRaycastManager.Raycast(ray, aRRaycastHits, UnityEngine.XR.ARSubsystems.TrackableType.Planes))
+        if (aRRaycastManager.Raycast(ray, aRRaycastHits, UnityEngine.XR.ARSubsystems.TrackableType.Planes) && IsButtonPressed() == false)
         {
             Pose hitPose = aRRaycastHits[0].pose;
             selectedPlant.transform.position = hitPose.position;
