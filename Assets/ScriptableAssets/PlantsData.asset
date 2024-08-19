@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6898d4c6bd250e5408e2e7308fe5f978, type: 3}
+  m_Name: PlantsData
+  m_EditorClassIdentifier: 
+  plants:
+  - id: 0
+    plantImage: {fileID: 2800000, guid: fd1645c26f7ddc34db1de1877a51f06b, type: 3}
+    plantName: Alovera
+    description: 
+  - id: 1
+    plantImage: {fileID: 2800000, guid: e13f48d2760a11b49992e55bb09cdd01, type: 3}
+    plantName: Flower
+    description: 
+  - id: 2
+    plantImage: {fileID: 2800000, guid: 45c640e51f7472c42939fdabe2e8cc2e, type: 3}
+    plantName: Rose
+    description: 
+  - id: 3
+    plantImage: {fileID: 2800000, guid: 042ef494133aa7c47b00a5f0ffbcb437, type: 3}
+    plantName: Kiwi
+    description: 
+  - id: 4
+    plantImage: {fileID: 2800000, guid: 6046b76b7a0b80744a7df517ef488200, type: 3}
+    plantName: Mango
+    description: 
+  - id: 5
+    plantImage: {fileID: 2800000, guid: e1bf77d4b5a48d3469a1e8ed9393806d, type: 3}
+    plantName: Apple
+    description: 
+  - id: 6
+    plantImage: {fileID: 2800000, guid: 99b46617b92dea346b4d1bcecdca6527, type: 3}
+    plantName: Grapes
+    description: 
+  - id: 7
+    plantImage: {fileID: 2800000, guid: 72d513d816bf5fa4cb80dd15bfbab826, type: 3}
+    plantName: Elephant
+    description: 
+  - id: 8
+    plantImage: {fileID: 2800000, guid: ad2900711093952449cde073ed31fe40, type: 3}
+    plantName: Black Rose
+    description: 
+  - id: 9
+    plantImage: {fileID: 2800000, guid: fd1645c26f7ddc34db1de1877a51f06b, type: 3}
+    plantName: Red Rose
+    description: 
